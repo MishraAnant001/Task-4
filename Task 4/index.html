@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="row flex-nowrap ">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-white text-dark " id="sidebar">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-dark min-vh-100">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                        <span class="fs-5 ">
+                            <div class="container-fluid d-flex mt-4">
+                                <!-- <i class="fa fa-pie-chart" style="font-size:36px"></i> -->
+                                <img src="assets/Images/dummy logo.png" alt="logo" class="logo">
+                                <div class="container-fluid mt-1 dabang t1" id="text1">Dabang</div>
+                            </div>
+                        </span>
+                    </a>
+                    <ul class="nav  flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item mt-3 nav-link-wrapper active WARRANTS active" id="dashboard_link">
+                            <a href="#" class="nav-link align-middle ">
+                              <i class="fa fa-pie-chart text-dark " style="font-size:24px" id="dashboardicon"></i>
+                              <span class="ms-1  pb-5  fontpoppins text-dark t1" id="text2">Dashboard</span>
+                            </a>
+                          </li>
+                        <li class="nav-item mt-3 nav-link-wrapper">
+                            <a href="#" class="nav-link align-middle d-flex ">
+                                <i class="material-icons text-dark">show_chart</i> <span
+                                    class="  text-dark ms-2 fontpoppins t1" id="text3">Leaderboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3 nav-link-wrapper">
+                            <a href="#" class="nav-link align-middle d-flex">
+                                <i class="material-icons text-dark">shopping_cart</i> <span
+                                    class="ms-1  text-dark pb-2 ms-2 fontpoppins  t1" id="text4">Orders</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3 nav-link-wrapper">
+                            <a href="#" class="nav-link align-middle ms-1 d-flex ">
+                                <i class="fa fa-line-chart text-dark"></i> <span
+                                    class="ms-1  text-dark ms-2 fontpoppins t1" id="text5">Sales Report</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3 nav-link-wrapper">
+                            <a href="#" class="nav-link align-middle ms-1 d-flex">
+                                <i class="material-icons text-dark">message</i> <span
+                                    class="ms-1  text-dark ms-2 fontpoppins t1" id="text6">Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3 nav-link-wrapper">
+                            <a href="#" class="nav-link align-middle ms-1 d-flex">
+                                <i class="material-icons text-dark">settings</i> <span
+                                    class="ms-1  text-dark ms-2 fontpoppins t1" id="text7">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-3 nav-link-wrapper">
+                            <a href="#" class="nav-link align-middle ms-2 d-flex">
+                                <i class="fa fa-sign-out text-dark" style="font-size:24px"></i><span
+                                    class="ms-1  text-dark ms-2 fontpoppins t1" id="text8">Sign Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="container-fluid d-flex flex-column justify-content-center align-content-center sidebarcard rounded-4" id="sidebarimage">
+                            <img src="assets/Images/Logo.png" alt="" class="logo justify-content-center logo1">
+                        <p class="text-white poppins dpro">Dabang Pro</p>
+                        <p class="text-white poppins1 paraside"> &nbsp;&nbsp;&nbsp; Get access to all <br> features on Tetumbus</p>
+                        <button class="btn poppins1 bg-white rounded-3 sidebtn">Get Pro</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col py-3">
+                <nav class="navbar navbar-expand-lg bg-white text-dark">
+                    <div class="container-fluid">
+                        <!-- <a class="navbar-brand" href="#"><i class="material-icons" style="font-size:36px">menu</i></a> -->
+                        <button onclick="togglerfunction()" class="togglerbtn">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <form class="d-flex align-content-end border-primary searchform" role="search">
+                            <div class="container-fluid d-flex search rounded-3 mt-2  pt-3 pb-2 h-25">
+                                <i class="material-icons pt-1" style="color: #5D5FEF;">search</i>
+                                <p class=" ps-1 pt-1 ">
+                                <div class="container para ">Search here..</div>
+                                </p>
+                            </div>
+                            <div class="conatiner ms-2 me-2 pt-3 ">
+                                    <i class="material-icons notificationicon">notifications_none </i>
+                                    <i class="bi bi-dot dot "></i>
+                            </div>
+                            <!-- <div class="container"> -->
+                            <!-- Example single danger button -->
+                            <!-- Example split danger button -->
+                            <div class="container d-flex admincontainer ">
+                                <div class="btn-group mb-1 d-flex justify-content-center ">
+                                    <img src="assets/Images/admin image.jfif" alt="admin" class="adminlogo">
+                                    <!-- <div class="containerfluid"> -->
+                                    <button type="button" class="btn d-flex justify-content-center border-0 " data-bs-toggle="dropdown"
+                                        data-bs-display="static" aria-expanded="false">
+                                        <div class="container-fluid d-flex flex-column">
+
+                                            <p class="h6 mt-0 musfiq d-none d-sm-none d-xl-block d-md-block d-lg-block">Musfiq</p>
+                                            <p class="text-muted mt-0 d-none d-sm-none d-xl-block d-md-block d-lg-block admintext">Admin</p>
+                                        </div>
+                                        <div class="container-fluid pt-2">
+                                            <i class="bi bi-chevron-down"></i>
+                                        </div>
+                                    </button>
+                                    <!-- </div> -->
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">My Account</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </nav>
+                <div class="container-fluid maincontent py-2">
+                    <div class="row px-4">
+                        <div class=" bg-light rounded-3 my-3 col-xl-12 col-lg-12 col-xxl-8 col-md-12 col-sm-12 col-12">
+                            <div class="container-fluid bg-white rounded-4 h-100">
+                                <div class="section1 d-flex">
+                                    <div class="container-fluid mt-3">
+                                        <p class="text1">Today's Sales</p>
+                                        <p class="text2">Sales Summary</p>
+                                    </div>
+                                    <div class="conatiner mt-4">
+                                        <button class="btn btn-white d-inline-bloxck d-flex" style="border: 1px solid 
+                                        #C3D3E2;"><i class="bi bi-upload me-2"></i> Export</button>
+                                    </div>
+                                </div>
+                                <div class="section2">
+                                    <div class="row py-4">
+                                        <div
+                                            class="col col-12 col-sm-12 col-md-6 col-xl-3 col-lg-6 col-xxl-3 mt-xl-0 mt-lg-0 mt-md-2 mt-sm-2 mt-2 ">
+                                            <div class="container card1 pb-2 rounded-3 ">
+                                                <div class="cardicon1">
+                                                    <i class="bi bi-file-bar-graph-fill icon1"></i>
+                                                </div>
+                                                <p><strong class="fs-4">$1k</strong></p>
+                                                <p>Total Sales </p>
+                                                <p class="text-primary parabox">+8% from yesterday</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col col-12 col-sm-12 col-md-6 col-xl-3 col-lg-6 col-xxl-3  mt-xl-0 mt-lg-0 mt-md-2 mt-sm-2 mt-2 ">
+                                            <div class="container card2 pb-2 rounded-3">
+                                                <div class="cardicon2">
+                                                    <i class="bi bi-file-earmark-text-fill icon2"></i>
+                                                </div>
+                                                <p><strong class="fs-4">300</strong></p>
+                                                <p>Total Orders </p>
+                                                <p class="text-primary parabox">+5% from yesterday</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col col-12 col-sm-12 col-md-6 col-xl-3 col-lg-6 col-xxl-3  mt-xl-0 mt-lg-0 mt-md-2 mt-sm-2 mt-2 mt-lg-3 mt-xxl-0">
+                                            <div class="container card3 pb-2 rounded-3">
+                                                <div class="cardicon3">
+                                                    <i class="bi bi-tag-fill icon3"></i>
+                                                </div>
+                                                <p><strong class="fs-4">5</strong></p>
+                                                <p>Product Sold </p>
+                                                <p class="text-primary parabox">+1.2% from yesterday</p>
+
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col col-12 col-sm-12 col-md-6 col-xl-3 col-lg-6 col-xxl-3  mt-xl-0 mt-lg-0 mt-md-2 mt-sm-2 mt-2 mt-lg-3 mt-xxl-0">
+                                            <div class="container card4 pb-2 rounded-3">
+                                                <div class="cardicon4">
+                                                    <i class="bi bi-person-fill-add icon4"></i>
+                                                </div>
+                                                <p><strong class="fs-4">8</strong></p>
+                                                <p>New Customers </p>
+                                                <p class="text-primary parabox">+0.5% from yesterday</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class=" bg-light rounded-3 my-3 px-3 col-xl-12 col-xxl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="container-fluid py-3 px-2 pb-4 bg-white rounded-3 h-100">
+                                <div class="container-fluid mt-2">
+                                    <p class="textvisitor">Visitor's Insights</p>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button  text-white " type="button"
+                                                style="background-color: #5D5FEF; color: white !important;" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Lorem Ipsum
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet
+                                                dignissimos distinctio earum aspernatur! Tempora, obcaecati veniam!
+                                                Fuga, excepturi ab
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-white" type="button"
+                                                style="background-color: #5D5FEF;" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Lorem Ipsum
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse "
+                                            data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur optio
+                                                nesciunt esse inventore rerum modi facere minima consequatur assumenda
+                                                eveniet
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      Accordion Item #3
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                  </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row px-4">
+                        <div class=" bg-light rounded-3 my-3  col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-12">
+                            <div class="container-fluid bg-white rounded-4">
+                                <div class="container-fluid pt-3">
+                                    <p class="textvisitor">Visitor list</p>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bg-white text-dark table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col " class="tablehead">#</th>
+                                                <th scope="col " class="tablehead">Name</th>
+                                                <th scope="col " class="tablehead">Join Date</th>
+                                                <th scope="col " class="tablehead">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="tabledata">01</th>
+                                                <td class="tabledata">Stephen P. Osborn</td>
+                                                <td class="tabledata">17 Jan, 2023</td>
+                                                <td><i class="bi bi-pencil-square me-2 text-primary ms-2"></i><i
+                                                        class="bi bi-trash text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="tabledata">02</th>
+                                                <td class="tabledata">Odessa G. Mettler</td>
+                                                <td class="tabledata">13 Feb, 2023</td>
+                                                <td><i class="bi bi-pencil-square me-2 text-primary ms-2"></i><i
+                                                        class="bi bi-trash text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="tabledata">03</th>
+                                                <td class="tabledata">Judith H. Richards</td>
+                                                <td class="tabledata">13 Feb, 2023</td>
+                                                <td><i class="bi bi-pencil-square me-2 text-primary ms-2"></i><i
+                                                        class="bi bi-trash text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="tabledata">04</th>
+                                                <td class="tabledata">Jack B. Perez</td>
+                                                <td class="tabledata">10 Feb, 2023</td>
+                                                <td><i class="bi bi-pencil-square me-2 text-primary ms-2"></i><i
+                                                        class="bi bi-trash text-danger"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="tabledata">05</th>
+                                                <td class="tabledata">Chris B. Ryant</td>
+                                                <td class="tabledata">10 Feb, 2023</td>
+                                                <td><i class="bi bi-pencil-square me-2 text-primary ms-2"></i><i
+                                                        class="bi bi-trash text-danger"></i></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="container-fluid d-flex align-content-center justify-content-center">
+                                    <p class="tablefooter text-primary">Read-More</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class=" bg-light rounded-3 my-3 px-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="container-fluid bg-white rounded-4 h-100">
+                                <div class="container-fluid pt-3">
+                                    <p class="textvisitor">Top Products</p>
+                                </div>
+                                <div class="table-responsive">
+
+                                    <table class="table table-bg-white text-dark table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col " class="tablehead">#</th>
+                                                <th scope="col " class="tablehead">Name</th>
+                                                <th scope="col " class="tablehead">Popularity</th>
+                                                <th scope="col " class="tablehead">Sales</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="" style="height: 3.5rem ;">
+                                                <th scope="row" class="tabledata mt-2">01</th>
+                                                <td class="tabledata mt-2">Home Decor Range</td>
+                                                <td class="tabledata ">
+                                                    <div class="progress "
+                                                        style="height:0.3rem;background-color: #CDE7FF;margin-top: 0.5rem;"
+                                                        role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress1"
+                                                            style="width: 75%;background-color: #0095FF;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn1">45%</button>
+                                                </td>
+                                            </tr>
+                                            <tr class="mt-2" style="height: 3.5rem ;">
+                                                <th scope="row" class="tabledata">02</th>
+                                                <td class="tabledata">Disney Princess Pink Bag 18'</td>
+                                                <td class="tabledata">
+                                                    <div class="progress "
+                                                        style="height:0.3rem;background-color: #8CFAC7;margin-top: 0.5rem;"
+                                                        role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress1"
+                                                            style="width: 60%;background-color: #00E096;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><button type="button" class="btn btn2">29%</button></td>
+                                            </tr>
+                                            <tr class="mt-2" style="height: 3.5rem ;">
+                                                <th scope="row" class="tabledata">03</th>
+                                                <td class="tabledata">Bathroom Essentials</td>
+                                                <td class="tabledata">
+                                                    <div class="progress "
+                                                        style="height:0.3rem;background-color: #C5A8FF;margin-top: 0.5rem;"
+                                                        role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress1" style="width: 50%;background-color: 
+                                                        #884DFF;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><button type="button" class="btn btn3">18%</button></td>
+                                            </tr class="mt-2">
+                                            <tr style="height: 3.5rem ;">
+                                                <th scope="row" class="tabledata">04</th>
+                                                <td class="tabledata">Apple Smartwatches</td>
+                                                <td class="tabledata">
+                                                    <div class="progress "
+                                                        style="height:0.3rem;background-color: #FFD5A4;margin-top: 0.5rem;"
+                                                        role="progressbar" aria-label="Basic example" aria-valuenow="75"
+                                                        aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress1"
+                                                            style="width: 25%;background-color: #FF8F0D;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td><button type="button" class="btn btn4">25%</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row px-4">
+                        <div class=" bg-light rounded-3 my-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="container-fluid bg-white rounded-4 h-100">
+                                <div class="container pt-3 ">
+                                    <h5 class="poppins">Main Products</h5>
+                                </div>
+                                <div class="tab">
+                                    <button class="tablinks tabbtn1 active" id="btn1"
+                                        onclick="openCity(event, 'London')">Product
+                                        1</button>
+                                    <button class="tablinks tabbtn2" onclick="openCity(event, 'Paris') ">Product
+                                        2</button>
+                                </div>
+                                <hr style="background-color: 
+                                #edf2f6c7; padding-left: 3rem;padding-right: 3rem; display:block;">
+                                <div class="table-responsive">
+
+                                    <div id="London" class="tabcontent">
+    
+                                        <div class="d-flex flex-row">
+                                            <div class="ms-3 pt-2">
+                                                <img src="assets/Images/product image.jfif"
+                                                    style="width: 5rem;height: 5rem;" alt="product image" class="d-flex">
+                                            </div>
+                                            <div class="container-fluid">
+                                                <h5>What is this product?</h5>
+                                                <p class="text-nowrap">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Accusamus
+                                                    dolore accusantium quisquam dolorem temporibus sapiente vel <br>
+                                                    reprehenderit officiis, nihil ad voluptatum rerum sequi explicabo! <br>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    </p>
+                                                <button class="btn tabcontentbtn mb-3">Read-More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+
+                                    <div id="Paris" class="tabcontent">
+                                        <div class="d-flex flex-row">
+                                            <div class="ms-3 pt-2">
+                                                <img src="assets/Images/product image.jfif"
+                                                    style="width: 5rem;height: 5rem;" alt="product image" class="d-flex">
+                                            </div>
+                                            <div class="container-fluid">
+                                                <h5>What is this product?</h5>
+                                                <p class="text-nowrap">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Aperiam eaque
+                                                    nostrum incidunt consectetur nam, beatae, totam obcaecati <br>expedita eos
+                                                    rerum dolorem Lorem ipsum dolor sit <br>amet consectetur adipisicing elit.</p>
+                                                    <button class="btn tabcontentbtn mb-3">Read-More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class=" bg-light rounded-3 my-3 px-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 col-12 col-lg-6 col-xxl-3">
+                            <div class="container-fluid px-3 py-2 bg-white rounded-4 h-100">
+                                <div class="container-fluid mt-4">
+                                    <p class="textvisitor">Sales mapping by country</p>
+                                </div>
+                                <div class="container-fluid ">
+                                    <img src="assets/Images/world image.PNG" class="img-fluid" alt="...">
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class=" bg-light rounded-3 my-3 px-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 col-12 col-lg-6 col-xxl-3">
+                            <div class="container-fluid px-3 py-2 bg-white rounded-4 h-100">
+                                <div class="container-fluid mt-4">
+                                    <p class="textvisitor">Volume vs Service level</p>
+                                </div>
+                                <div class="container-fluid">
+                                    <img src="assets/Images/bargraph.PNG" class="img-fluid" alt="...">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/JS/script.js"></script>
+    <script>
+            document.addEventListener('DOMContentLoaded', () => {
+  let activeLink = document.getElementById('dashboard_link');
+  activeLink.classList.add('active');
+});
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,474 @@
+
+.logo{
+    height: 3rem;
+    width: 3rem;
+}
+.dabang{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("/assets/Images/chevron-up.svg") !important;
+  }
+
+.accordion-button::after {
+    background-image: url("/assets/Images/chevron-up.svg") !important;
+}
+.column1{
+    height: 100vh;
+}
+.sidebarbox{
+    background-color: #5D5FEF !important;
+    margin-top: 8rem;
+}
+.getprobutton{
+    color: #5D5FEF;
+    height: 2rem;
+    width: 8rem;
+
+}
+.search{
+    background-color: #F9FAFB;
+    width: 90rem;
+    height: 2rem;
+}
+.para{
+    /* width:30rem; */
+}
+.tab button.active{
+    background-color: #5D5FEF;
+    color: white;
+}
+.adminlogo{
+    width: 2.6rem;
+    height: 2.8rem;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+
+}
+.admincontainer{
+    /* margin-right: 5rem; */
+
+}
+.adminbtn{
+    border: none !important;
+}
+.searchform{
+    width:30rem;
+}
+.divider{
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+.togglerbtn{
+    background-color: white;
+    border: none;
+}
+.section3{
+    height: auto;
+}
+.section4{
+    height: auto;
+}
+.card1{
+    background-color: rgba(255, 226, 229, 1) !important;
+    width: 15rem;;
+}
+.card2{
+    background-color: rgba(255, 244, 222, 1) !important;
+    width: 15rem;;
+}
+.card3{
+    background-color: rgba(220, 252, 231, 1) !important;
+    width: 15rem;;
+}
+.card4{
+    background-color: rgba(243, 232, 255, 1) !important;
+    width: 15rem;;
+}
+/* .icon1{
+    background-color: rgba(250, 90, 125, 1) !important;
+    
+}
+.icon1internal{
+    color: rgba(250, 90, 125, 1) !important;
+} */
+.active{
+    color: white ;
+    background-color: #5D5FEF ;
+    border-radius: 5px !important;
+}
+.active a i{
+    color: white !important;
+}
+.active a span{
+    color: white !important;
+}
+/* .nav-item a span{
+    padding-bottom: 2rem !important;
+    display: inline-block;
+} */
+.fontpoppins{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+/* .dashboard{
+    background-color: #5D5FEF;
+    color: white;
+} */
+.dashboard1{
+    color:black;
+    background-color: white;
+}
+.notificationicon{
+    background-color: #FFFAF1;
+    color: #FFA412;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+}
+.adminspan{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-left: 0.5rem;
+}
+.maincontent{
+    background-color: #F9FAFB;
+}
+.text1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.text2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+}
+.parabox{
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+.textvisitor{
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+.tablehead{
+    font-size: 1rem;
+    font-weight: lighter !important;
+    color: #96A5B8 !important;
+    font-family: 'Poppins', sans-serif;
+}
+.tabledata{
+    color: #444A6D;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+}
+.progressbarprop{
+    height: 0.3rem !important;
+    margin-top: 0.5rem;
+
+}
+.progress1{
+    color: #0095FF !important;
+    background-color: black;
+}
+.btn1{
+    color: #0095FF !important;
+    border:1px solid #0095FF !important;
+    height: 1.5rem;
+    width: 2.5rem;
+    font-size: 0.8rem !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0rem !important;
+}
+.btn2{
+    color:#00E096 !important;
+    border:1px solid #00E096 !important;
+    height: 1.5rem;
+    width: 2.5rem;
+    font-size: 0.8rem !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0rem !important;
+}
+.btn3{
+    color: #884DFF !important;
+    border:1px solid #884DFF !important;
+    height: 1.5rem;
+    width: 2.5rem;
+    font-size: 0.8rem !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0rem !important;
+}
+.btn4{
+    color: #FF8F0D !important;
+    border:1px solid #FF8F0D !important;
+    height: 1.5rem;
+    width: 2.5rem;
+    font-size: 0.8rem !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0rem !important;
+}
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    /* background-color: #f1f1f1; */
+  }
+  
+  /* Style the buttons inside the tab */
+  /* .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  } */
+  
+  /* Change background color of buttons on hover */
+  /* .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  /* .tab button.active {
+    background-color: #ccc;
+  } */ 
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    /* padding: 6px 12px; */
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+  .tabcontent1 {
+    /* display: none; */
+    /* padding: 6px 12px; */
+    /* border: 1px solid #ccc; */
+    border-top: none;
+  }
+  .tabbtn1{
+    background-color:white;
+    color: black;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0px;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid #5D5FEF; */
+    outline: none;
+    margin-left: 0.7rem;
+  }
+  .tabbtn2{
+    background-color:white;
+    color: black;
+    font-size: 1.3rem;
+    border-radius: 0px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid #5D5FEF; */
+    outline: none;
+  }
+  .activated{
+    background-color: #5D5FEF;
+    font-size: 1.3rem;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border: 1px solid #5D5FEF;
+    outline: none;
+  }
+  .cardproduct{
+    padding: 0 !important;
+    border: none !important;
+    outline:none !important;
+  }
+  .cardicon1{
+    background-color:    #FA5A7D;
+    border-radius: 50%;
+    display: inline-block;
+    /* padding: 0.3rem; */
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .icon1{
+    color:white;
+    margin-top: 2rem;
+  }
+  .cardicon2{
+    background-color:    #FF947A;
+    border-radius: 50%;
+    display: inline-block;
+    /* padding: 0.3rem; */
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .icon2{
+    color:white;
+    margin-top: 2rem;
+  }
+  .cardicon3{
+    background-color:    #3CD856;
+    border-radius: 50%;
+    display: inline-block;
+    /* padding: 0.3rem; */
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .icon3{
+    color:white;
+    margin-top: 2rem;
+  }
+  .cardicon4{
+    background-color:    #BF83FF;
+    border-radius: 50%;
+    display: inline-block;
+    /* padding: 0.3rem; */
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .icon4{
+    color:white;
+    margin-top: 2rem;
+  }
+  /* .cardicon1{
+    border-radius: 4rem !important;
+    background-color:    #FA5A7D !important;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    height: 0.5rem;
+    width:0.5rem;
+    margin-top: 1rem;
+  } */
+  /* .cardicon{
+    margin-top: 1rem;
+  } */
+.poppins{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+.none{
+    display: none;
+}
+.tabcontentbtn{
+    color: white !important;
+    background: #5D5FEF !important;
+}
+.tabcontentbtn:hover{
+    background-color: #0095FF !important;
+}
+/* #sidebar{
+    width: 14rem;
+} */
+/* .collapsed{
+    width:5rem;
+}
+.collapsed div a span div div {
+    display: none;
+}
+.collapsed div ul li a span  {
+    display: none;
+} */
+.admintext{
+    font-size: 0.8rem;
+}
+.musfiq{
+    font-size: 1rem;
+    margin-top: 0;
+}
+.sidebarcard{
+    background-color: #5D5FEF;
+    margin-bottom: 8rem !important;
+}
+.poppins1{
+    font-family: 'Poppins', sans-serif;
+}
+.logo1{
+    margin: auto;
+    margin-top: 1rem;
+}
+.dpro{
+    margin: auto;
+    margin-top: 1rem;
+}
+.paraside{
+    margin-top: 0.5rem !important;
+    margin: auto;
+    font-size: 0.6rem;
+    /* padding-left: 0.5rem; */
+}
+.sidebtn{
+    color: #5D5FEF !important;
+    font-weight: bold !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    width: 8rem;
+    margin: auto;
+}
+.dot{
+    position: relative;
+    bottom: 2.8rem;
+    left: 1.7rem;
+    color: #FF8F0D;
+    font-size: 1.5rem;
+}
+/* @media screen and (max-width: 800px) {
+    #sidebar{
+        width:5rem !important;
+    }
+    #text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8{
+        display: none !important;
+    }
+    #sidebarimage{
+        display: none !important;
+    }
+
+
+  }
+@media screen and (max-width: 400px) {
+    #sidebar{
+        display: none !important;
+    }
+
+
+
+  }
+   */
+
+.dinline{
+    display: inline !important;
+}
+.sidewidthmin{
+    width:5rem !important;
+}
+.sidewidthmax{
+    width:14rem !important;
+}
+.dnone{
+    display: none !important;
+}
+.dblock{
+    display: block !important;
+}
